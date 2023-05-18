@@ -16,5 +16,15 @@ spring:
 logging.level:
   org.hibernate.SQL: debug
   org.hibernate.type: trace
+
 # org.hibernate.type: trace #스프링 부트 2.x, hibernate5
 # org.hibernate.orm.jdbc.bind: trace #스프링 부트 3.x, hibernate6
+
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: true
+# p6spy의 enable-logging의 기본 값이 true로 설정되어 있음
+# 사용할 때는 별도로 명시해주지 않아도 되며, false 처리를 할 때 명시해줘야 함
+# 배포 & 운영 단계에서는 사용하지 X
+
