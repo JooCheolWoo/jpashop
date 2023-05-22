@@ -14,10 +14,10 @@ docker stop ${APP_NAME}
 # container remove
 docker rm ${APP_NAME}
 # image remove
-docker rmi ${APP_NAME}:${server_version}
+docker rmi ${APP_NAME}
 # build to a Docker daemon
 gradle build --exclude-task test
 # build docker
-docker build -t ${APP_NAME}:${server_version} .
+docker build -t ${APP_NAME} .
 # docker run
-docker run -d -p ${PORT}:${PORT} -v /etc/localtime:/etc/localtime:ro -e TZ=Asia/Seoul -e "ACTIVE=${ACTIVE}" -e "CORS_LIST=${CORS_LIST}" -e "AWS_ACCESS_KEY=${AWS_ACCESS_KEY}" -e "AWS_SECRET_KEY=${AWS_SECRET_KEY}" --restart unless-stopped --network ${NETWORK} --name ${APP_NAME} ${APP_NAME}:${server_version}
+docker run -d -p 10252:10252 --restart unless-stopped --name ${APP_NAME} ${APP_NAME}
