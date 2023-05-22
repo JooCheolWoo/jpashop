@@ -11,4 +11,4 @@ sh gradlew build
 # build docker
 docker build -t jpashop .
 # docker run
-docker run -d -p 10252:10252 --name jpashop jpashop
+docker run -d -p 10252:10252 --restart unless-stopped --name jpashop jpashop
