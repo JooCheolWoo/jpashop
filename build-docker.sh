@@ -7,7 +7,7 @@ docker rm jpashop
 # image remove
 docker rmi jpashop
 # build to a Docker daemon
-gradlew build
+sh gradlew build
 # build docker
 docker build -t jpashop .
 # docker run
