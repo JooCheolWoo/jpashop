@@ -5,7 +5,6 @@ source ./yaml.sh
 
 # Execute
 create_variables ./src/main/resources/application.yml
-echo ${server_version}
 
 APP_NAME="jpashop"
 
