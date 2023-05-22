@@ -1,6 +1,5 @@
 HELP.md
 .gradle
-!build/libs/
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
@@ -22,7 +21,6 @@ bin/
 .idea
 *.iws
 *.iml
-
 *.ipr
 out/
 !**/src/main/**/out/
