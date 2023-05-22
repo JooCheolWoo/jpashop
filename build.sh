@@ -1,6 +1,6 @@
 #!/bin/bash
 # move to project folder
-cd ~/home/cheolwoo/jpashop
+cd /home/cheolwoo/jpashop
 git reset
 git checkout .
 git clean -fdx
