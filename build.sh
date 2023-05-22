@@ -1,8 +1,6 @@
 #!/bin/bash
-APP_NAME="jpashop"
 # move to project folder
-#cd ~/back-end/${APP_NAME}
-cd ~/cheolwoo/${APP_NAME}
+cd ~/cheolwoo/jpashop
 git reset
 git checkout .
 git clean -fdx

@@ -1,12 +1,4 @@
 #!/bin/bash
-# shellcheck disable=SC2154
-# shellcheck disable=SC1091
-source ./yaml.sh
-
-# Execute
-create_variables ./src/main/resources/application.yml
-
-APP_NAME="jpashop"
 
 # current docker container stop
 docker stop jpashop
