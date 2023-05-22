@@ -9,14 +9,14 @@ create_variables ./src/main/resources/application.yml
 APP_NAME="jpashop"
 
 # current docker container stop
-docker stop ${APP_NAME}
+docker stop jpashop
 # container remove
-docker rm ${APP_NAME}
+docker rm jpashop
 # image remove
-docker rmi ${APP_NAME}
+docker rmi jpashop
 # build to a Docker daemon
 gradle build --exclude-task test
 # build docker
-docker build -t ${APP_NAME} .
+docker build -t jpashop .
 # docker run
-docker run -d -p 10252:10252 --restart unless-stopped --name ${APP_NAME} ${APP_NAME}
+docker run -d -p 10252:10252 --restart unless-stopped --name jpashop jpashop
