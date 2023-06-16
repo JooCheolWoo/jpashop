@@ -1,10 +1,10 @@
 server:
   version: 0.0.2
-  port: 10252
+  port: 10501
 
 spring:
   datasource:
-    url: jdbc:mariadb://58.238.182.90:10241/jpashop
+    url: jdbc:mariadb://58.238.182.90:10401/jpashop
     username: cheolwoo
     password: root
     driver-class-name: org.mariadb.jdbc.Driver
